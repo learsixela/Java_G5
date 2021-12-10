@@ -1,0 +1,20 @@
+package cl.desafiolatam.experimental;
+
+import java.util.Scanner;
+public class SoloPares2 {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		int n = sc.nextInt();
+		int i=1;
+		int cantidadPares = 0;
+		while( cantidadPares < n) {
+			if(i%2 == 0) {
+				System.out.printf("%d\n", i);
+				cantidadPares +=1;
+			}
+			i++;			
+		}
+		sc.close();
+	}
+}
