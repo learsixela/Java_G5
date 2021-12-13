@@ -41,6 +41,7 @@ public class DiaADia {
 			BufferedWriter buff = new BufferedWriter(fileWriter);
 			buff.write("package com.desafiolatam.f"+hoy+";");
 			buff.newLine();
+			buff.newLine();
 			buff.write("public class Main {");
 			buff.newLine();
 			buff.newLine();

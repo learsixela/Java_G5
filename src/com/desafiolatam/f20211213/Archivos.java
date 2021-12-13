@@ -24,7 +24,6 @@ public class Archivos {
 			File archivo = new File(rutaBase+nombreCarpeta+"/index.html");
 			archivo.createNewFile();
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		System.out.println("fin file");
