@@ -1,0 +1,4 @@
+cualquier cosa
+otra linea
+Otro String
+nos vamos al break
