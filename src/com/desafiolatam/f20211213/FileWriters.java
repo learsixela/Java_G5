@@ -1,14 +1,47 @@
 package com.desafiolatam.f20211213;
 
+import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Scanner;
 
 public class FileWriters {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IOException {
+		escribir();
+		leer();
+		System.out.println("*** fin file ***");
+	}
+	
+	private static void leer() throws IOException {
+		// Leer archivo 
+		String rutaBase = "src/com/desafiolatam/f20211213";
+		File archivo = new File(rutaBase+"/index.txt");
+		
+		try {
+			FileReader fileReader = new FileReader(archivo);
+			BufferedReader buffReader = new BufferedReader(fileReader);
+			
+			String  textoFila = buffReader.readLine();
+			while( textoFila != null) {
+				System.out.println(textoFila);
+				textoFila = buffReader.readLine();
+			}
+			
+			buffReader.close();
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		}
+		
+		
+	}
+
+	public static void escribir()
+	{
 		Scanner sc = new Scanner(System.in);
 		String rutaBase = "src/com/desafiolatam/f20211213";
 		
@@ -31,10 +64,12 @@ public class FileWriters {
 			//fileWriter.close();
 			
 			BufferedWriter buff = new BufferedWriter(fileWriter);
-			buff.write("\nOtro String\n");
+			buff.newLine();//agrega nueva linea
+			buff.write("Otro String");
 			
 			System.out.println("Ingrese texto a agregar");
 			String texto = sc.nextLine();
+			buff.newLine();//agrega nueva linea
 			buff.write(texto);
 			buff.close();
 			
@@ -43,7 +78,7 @@ public class FileWriters {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		System.out.println("fin file");
+		
 	}
 
 }
