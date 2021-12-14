@@ -59,8 +59,8 @@ public class FileWriters {
 			}
 			
 			FileWriter fileWriter = new FileWriter(archivo);
-			fileWriter.write("cualquier cosa\n");
-			fileWriter.write("otra linea");
+			//fileWriter.write("cualquier cosa\n");
+			//fileWriter.write("otra linea");
 			//fileWriter.close();
 			
 			BufferedWriter buff = new BufferedWriter(fileWriter);

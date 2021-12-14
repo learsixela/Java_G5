@@ -72,6 +72,7 @@ public class Hola {
 		System.out.println(palabra.substring(0, 4));
 		System.out.println(palabra.substring(4, 8));
 		System.out.println(palabra.substring(8));
+
 		
 		//
 		
