@@ -8,6 +8,9 @@ public class Televisor {
 	public static void apagarTelevisor() {
 		
 	}
+	public static String test(String text) {
+		return "";
+	}
 	//constructores
 	public Televisor() {
 		super();
@@ -37,5 +40,6 @@ public class Televisor {
 	public String toString() {
 		return "Televisor [marca=" + marca + ", definicion=" + definicion + "]";
 	}
+
 	
 }

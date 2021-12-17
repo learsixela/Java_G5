@@ -13,6 +13,7 @@ public class DiaADia {
 
 	public static void main(String[] args) {
 		escribirMain();
+		System.out.println("... proceso terminado.");
 	}
 	
 	public static void escribirMain()

@@ -14,6 +14,13 @@ public class Persona {
 		super();
 	}
 
+	public Persona(String nombre, Integer rut, String dv) {
+		super();
+		this.nombre = nombre;
+		this.rut = rut;
+		this.dv = dv;
+	}
+	
 	public Persona(String nombre, int edad, Date fechaNacimiento, Integer rut, String dv) {
 		super();
 		this.nombre = nombre;
