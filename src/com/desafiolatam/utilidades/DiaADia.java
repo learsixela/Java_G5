@@ -30,6 +30,11 @@ public class DiaADia {
 		// si no exite la ruta, crea la nueva carpeta
 		if(!carpeta.exists()) {
 			carpeta.mkdir();
+			System.out.println("Directorio creado...");
+			// ruta de mi carpeta
+			File models = new File(rutaBase+"/models");
+			models.mkdir();
+			System.out.println("Package creado...");
 		}
 		
 		try {
@@ -54,7 +59,7 @@ public class DiaADia {
 			buff.newLine();
 			buff.write("}");
 			buff.close();
-			
+			System.out.println("Clase Main creada...");
 
 		} catch (IOException e) {
 			// TODO Auto-generated catch block

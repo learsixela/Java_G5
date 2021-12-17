@@ -21,7 +21,7 @@ public class Main {
 		System.out.println();
 		
 		//instancia de un nuevo automovil
-		Automovil automovil3 = new Automovil("Azul",4.1d,2.2d,"Fierro");
+		Automovil automovil3 = new Automovil("Azul",4.1d,2.2d,null);
 		System.out.println(automovil3.toString());
 	}
 
