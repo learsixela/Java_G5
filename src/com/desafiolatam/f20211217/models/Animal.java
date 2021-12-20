@@ -5,7 +5,7 @@ public class Animal {
 	private String nombre;
 	private String raza;
 	private String color;
-	//colaboracion
+	//colaboracion a traves de clase
 	private Alimento alimento;
 	
 	public Animal() {

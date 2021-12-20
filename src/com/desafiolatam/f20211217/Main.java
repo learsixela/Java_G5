@@ -26,8 +26,11 @@ public class Main {
 		//nueva instancia, usuamos el constructor con parametros
 		Auto papu = new Auto("Negro",0.0f,5, 1.6f);
 		papu.setVelocidad(320.0f);
+		//acceso a valor del atributo
+		System.out.println(papu.getColor());		
 		System.out.println(papu.toString());
 		
+		//nueva instancia del tipo objeto Auto
 		Auto autito = new Auto("Blanco", 3);
 		System.out.println(autito.toString());
 		//como asigno valores a los otros atributos?
@@ -37,23 +40,37 @@ public class Main {
 		autito.setColor("Cafe");
 		System.out.println(autito.toString());
 		
-		System.out.println();
 		
+		System.out.println();
+		/**
+		 * COLABORACION
+		 * */
 		Alimento alimento = new Alimento("Wiskat","Comida para el gatito");
+		//nuevo objeto de tipo Alimento
 		Alimento qwerty = new Alimento();
 		
+		//objeto de tipo Animal
 		Animal gato = new Animal("micho","Angora","Tricolor",qwerty);
-		//System.out.println(gato.toString());
+		
+		//Acceso a valores de los atributos
 		System.out.println("El color es: "+ gato.getColor());
 		System.out.println("El nombre es: "+gato.getNombre());
 		System.out.println("Su raza es: "+gato.getRaza());
 		
+		/* Asignacion a traves del get y set*/
 		gato.getAlimento().setComida("Catshow");
 		System.out.println("Su alimento: "+gato.getAlimento().getComida()+" " +gato.getAlimento().getDescripcion());
-		//System.out.println("descripcion comida: "+);
 		
+		/** Colaboracion a nivel de metodo*/
 		System.out.println();
 		auto.imprimirAlimento(alimento);
+		
+		/**
+		 * HERENCIA
+		 * */
+		System.out.println();
+		
+		
 		
 	}
 
