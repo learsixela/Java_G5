@@ -6,6 +6,7 @@ public class Auto {
 	private Float motor;
 	private String color;
 	private float velocidad;
+	public String pruebaEstatica;
 
 	// constructores
 	public Auto(String marca, Float motor, String color, float velocidad) {

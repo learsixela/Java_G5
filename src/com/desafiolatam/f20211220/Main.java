@@ -12,11 +12,18 @@ public class Main {
 		auto.aumentarVelocidad();
 		System.out.println(auto.toString());
 		//aceleramos con un valor especifico
-		auto.aumentarVelocidad(-14);
+		auto.aumentarVelocidad(15);
 		System.out.println(auto.toString());
 		//frenamos
-		auto.aumentarVelocidad(false, true);
+		auto.aumentarVelocidad(true, true);
 		System.out.println(auto.toString());
+		auto.pruebaEstatica = "test de atributo publico";
+		System.out.println(auto.pruebaEstatica);
+		
+		
+		System.out.println("*********");
+		Auto autito = new Auto();
+		System.out.println(autito.toString());
 		
 	}
 
