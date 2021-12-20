@@ -7,10 +7,15 @@ public class Main {
 	public static void main(String[] args) {
 		//instancia de Auto
 		Auto auto = new Auto();
+		//aumenta automaticamente en 10
 		auto.aumentarVelocidad();
-		auto.aumentarVelocidad(0);
-		auto.aumentarVelocidad(false, false);
-		
+		System.out.println(auto.toString());
+		//aceleramos con un valor especifico
+		auto.aumentarVelocidad(5);
+		System.out.println(auto.toString());
+		//frenamos
+		auto.aumentarVelocidad(false, true);
+		System.out.println(auto.toString());
 		
 	}
 
