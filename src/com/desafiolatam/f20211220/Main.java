@@ -1,5 +1,7 @@
 package com.desafiolatam.f20211220;
 
+import java.util.ArrayList;
+
 import com.desafiolatam.f20211220.models.Auto;
 
 public class Main {
@@ -25,6 +27,18 @@ public class Main {
 		Auto autito = new Auto();
 		System.out.println(autito.toString());
 		
+		ArrayList<String> canciones = new ArrayList<String>();
+		canciones.add("");
+		
+		obtenerCancion(canciones);
+		
 	}
+	
+	public static String obtenerCancion(ArrayList<String> canciones) {
+		
+		
+		return canciones.get(0);
+	} 
+	
 
 }
