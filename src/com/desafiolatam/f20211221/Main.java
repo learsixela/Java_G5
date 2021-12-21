@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Iterator;
 
 import com.desafiolatam.f20211221.models.Estudiante;
+import com.desafiolatam.f20211221.models.Nieto;
 import com.desafiolatam.f20211221.models.Persona;
 import com.desafiolatam.f20211221.models.Profesor;
 
@@ -23,10 +24,10 @@ public class Main {
 		estudiantes.add(new Estudiante("Ayun","Palma",null,null,true));
 		estudiantes.add(new Estudiante("Donato","Palma",null,null,false));
 		
-		/********************************/
+		
 		profesores.add(new Profesor("Pamela","Arriagada",null, "1-9",true));
 		
-		/*recorrer las listas*/
+		
 		
 		for (Iterator iterator = estudiantes.iterator(); iterator.hasNext();) {
 			Estudiante alumno = (Estudiante) iterator.next();
@@ -51,14 +52,25 @@ public class Main {
 		System.out.println("** POLIMORFISMO **");
 		ArrayList<Persona> personas = new ArrayList<Persona>();
 		
-		personas.add(estudiante);
+		Estudiante estudiante2 = new Estudiante();
+		estudiante2.setNombre("Zoe2");
+		estudiante2.setApellido("Loren2");
+		estudiante2.setAsistencia(true);
+		
+		personas.add(estudiante2);
+		
 		personas.add(new Estudiante("Ayun","Palma",null,null,true));
 		personas.add(new Estudiante("Donato","Palma",null,null,false));
 		personas.add(new Profesor("Pamela","Arriagada",null, "1-9",true));
 		
+		Nieto nieto = new Nieto("Luffy","Monkey",null,null,true);
+		personas.add(nieto);
 		for (Persona persona : personas) {
 			System.out.println(persona.toString());
 		}
+		
+		System.out.println("Nieto "+nieto.toString());
+		
 		
 	}
 
