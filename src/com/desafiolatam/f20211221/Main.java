@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Iterator;
 
 import com.desafiolatam.f20211221.models.Estudiante;
+import com.desafiolatam.f20211221.models.Persona;
 import com.desafiolatam.f20211221.models.Profesor;
 
 public class Main {
@@ -42,7 +43,23 @@ public class Main {
 			System.out.println(profesores.get(i).toString());
 		}
 		
+		
+		/**
+		 * POLIMORFISMO
+		 * */
 
+		System.out.println("** POLIMORFISMO **");
+		ArrayList<Persona> personas = new ArrayList<Persona>();
+		
+		personas.add(estudiante);
+		personas.add(new Estudiante("Ayun","Palma",null,null,true));
+		personas.add(new Estudiante("Donato","Palma",null,null,false));
+		personas.add(new Profesor("Pamela","Arriagada",null, "1-9",true));
+		
+		for (Persona persona : personas) {
+			System.out.println(persona.toString());
+		}
+		
 	}
 
 }
