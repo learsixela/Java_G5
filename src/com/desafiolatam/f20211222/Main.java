@@ -38,7 +38,29 @@ public class Main {
 		
 		for (Medico medico2 : listaMedicos) {
 			medico2.consulta();
+			System.out.println(medico2.getClass().getSimpleName());
 		}		
+		
+		/**
+		 * Parseo o Casteo (transformar o convertir a )
+		 * */
+		//Variable de tipo Medico, se comporta como Neurologo, lo transformamos a Neurologo
+		// (Upcasting)
+		Neurologo neuro = (Neurologo) neurologo;
+		System.out.println("\nespecialidad "+neuro.getEspecialidad());
+		
+		//Casteo implicito (Widening)
+		int numeroInt = 44;
+		double numeroDouble = numeroInt;
+		
+		//Casteo explicito (Narrowing)
+		
+		double numero2Double = 55d;
+		int numero2Int = (int) numero2Double;		
+		
+		int numero3Int = 66;
+		Double numero3Double= (double) numero3Int;
+		
 	}
 
 }
