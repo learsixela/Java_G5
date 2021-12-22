@@ -12,4 +12,10 @@ public class Nieto extends Profesor {
 		super(nombre, apellido, fechaNacimiento, rut, asistencia);
 	}
 
+	@Override
+	public String toString() {
+		return "Nieto [toString()=" + super.toString() + "]";
+	}
+	
+
 }

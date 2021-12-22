@@ -12,4 +12,9 @@ public class Profesor extends Persona{
 		super(nombre, apellido, fechaNacimiento, rut, asistencia);
 	}
 
+	@Override
+	public String toString() {
+		return "Profesor [toString()=" + super.toString() + "]";
+	}
+
 }

@@ -65,6 +65,8 @@ public class Main {
 		
 		Nieto nieto = new Nieto("Luffy","Monkey",null,null,true);
 		personas.add(nieto);
+		
+		
 		for (Persona persona : personas) {
 			System.out.println(persona.toString());
 		}
