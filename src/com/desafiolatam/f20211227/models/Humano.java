@@ -1,6 +1,8 @@
 package com.desafiolatam.f20211227.models;
 
-public class Humano extends Omnivoro{
+import com.desafiolatam.f20211227.interfaces.Genericos;
+
+public class Humano extends Omnivoro implements Genericos{
 
 	private boolean razonamiento;
 
@@ -23,6 +25,24 @@ public class Humano extends Omnivoro{
 
 	@Override
 	public void metodoAnimal() {		
+	}
+
+	@Override
+	public void respirar() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public int caminar() {
+		System.out.println("camina en 2 extremidades");
+		return 2;
+	}
+
+	@Override
+	public int correr() {
+		// TODO Auto-generated method stub
+		return 0;
 	}
 	
 	

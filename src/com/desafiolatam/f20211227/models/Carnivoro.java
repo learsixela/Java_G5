@@ -12,4 +12,6 @@ public abstract class Carnivoro extends Animal{
 	public void setCarnesFavoritas(List<String> carnesFavoritas) {
 		this.carnesFavoritas = carnesFavoritas;
 	}
+	
+	
 }

@@ -1,7 +1,6 @@
 package com.desafiolatam.f20211227;
 
 import com.desafiolatam.f20211227.models.Animal;
-import com.desafiolatam.f20211227.models.Bebe;
 import com.desafiolatam.f20211227.models.Humano;
 import com.desafiolatam.f20211227.models.Tigre;
 
@@ -19,7 +18,7 @@ public class Main {
 		
 		/**
 		 * CLASES ABSTRACTAS
-		 * no se puede implementar
+		 * no se puede implementar; No se pueden instanciar
 		 * Solo clases abstractas implementan metodos abstractos
 		 * Metodos abstractos solo se definen, no llevan {}
 		 * Las clases abstractas que heredan de otra clase abstract no implementan sus metodos
@@ -30,7 +29,7 @@ public class Main {
 		
 		Animal animalBB = new Humano();
 		
-		
+		double floorOfPi = Math.floor(Math.PI);
 		
 	}
 
