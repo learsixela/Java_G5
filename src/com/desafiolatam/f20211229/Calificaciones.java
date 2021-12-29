@@ -28,6 +28,8 @@ public class Calificaciones {
 		System.out.println("Ingresa nota 3");
 		float nota3 = sc.nextFloat();
 		
+		float promedio = (nota1+nota2+nota3)/3;
+		
 		System.out.println();
 		System.out.println("*********************************");
 		System.out.println("* Estudiante  ** " + estudiante+" *");
@@ -37,7 +39,9 @@ public class Calificaciones {
 		System.out.println("* Nota 1      ** " + nota1+" *");
 		System.out.println("* Nota 2      ** " + nota2+" *");
 		System.out.println("* Nota 3      ** " + nota3+" *");
-		System.out.println("╚══════════════════════════════╝");
+		System.out.println("╔═══════════════════════════════╗");
+		System.out.println("* Promedio    ** " + (int)promedio+" *");
+		System.out.println("╚═══════════════════════════════╝");
 	}
 
 }
