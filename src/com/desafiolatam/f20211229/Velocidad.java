@@ -14,7 +14,7 @@ public class Velocidad {
 		//v= d/t
 		float velocidad = distancia/tiempo;
 		
-		System.out.println("La velocidad es: "+distancia/tiempo+ " km/h");
+		System.out.println("La velocidad es: "+velocidad+ " km/h");
 		
 		
 

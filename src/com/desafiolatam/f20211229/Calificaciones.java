@@ -22,26 +22,63 @@ public class Calificaciones {
 		String docente = sc.nextLine();
 		
 		System.out.println("Ingresa nota 1");
-		float nota1 = sc.nextFloat();
+		Float nota1 = sc.nextFloat();
 		System.out.println("Ingresa nota 2");
-		float nota2 = sc.nextFloat();
+		Float nota2 = sc.nextFloat();
 		System.out.println("Ingresa nota 3");
-		float nota3 = sc.nextFloat();
+		Float nota3 = sc.nextFloat();
 		
-		float promedio = (nota1+nota2+nota3)/3;
+		Float promedio = (nota1+nota2+nota3)/3;
+		String estado= "Reprobado";
+		if(promedio >= 4) {
+			estado = "Aprobado";
+		}
 		
 		System.out.println();
-		System.out.println("*********************************");
-		System.out.println("* Estudiante  ** " + estudiante+" *");
-		System.out.println("* Docente     ** " + docente+" *");
-		System.out.println("* Asignatura  ** " + asignatura+" *");
-		System.out.println("*********************************");
-		System.out.println("* Nota 1      ** " + nota1+" *");
-		System.out.println("* Nota 2      ** " + nota2+" *");
-		System.out.println("* Nota 3      ** " + nota3+" *");
-		System.out.println("╔═══════════════════════════════╗");
-		System.out.println("* Promedio    ** " + (int)promedio+" *");
-		System.out.println("╚═══════════════════════════════╝");
+		System.out.println("╔═════════════╦═════════════════╗");
+		System.out.printf("║ Estudiante  ║ " + estudiante);
+		for (int i = 1; i < (17 - estudiante.length()); i++) {
+			System.out.printf(" ");
+		}
+		System.out.printf("║\n");
+		System.out.printf("║ Docente     ║ " + docente);
+		for (int i = 1; i < (17 - docente.length()); i++) {
+			System.out.printf(" ");
+		}
+		System.out.printf("║\n");
+		System.out.printf("║ Asignatura  ║ " + asignatura);
+		for (int i = 1; i < (17 - asignatura.length()); i++) {
+			System.out.printf(" ");
+		}
+		System.out.printf("║\n");
+		
+		System.out.println("╠═════════════╬═════════════════╣");
+		System.out.printf("║ Nota 1      ║ " + nota1);
+		for (int i = 1; i < (17 - nota1.toString().length()); i++) {
+			System.out.printf(" ");
+		}
+		System.out.printf("║\n");
+		
+		System.out.printf("║ Nota 2      ║ " + nota2);
+		for (int i = 1; i < (17 - nota2.toString().length()); i++) {
+			System.out.printf(" ");
+		}
+		System.out.printf("║\n");
+		System.out.printf("║ Nota 3      ║ " + nota3);
+		for (int i = 1; i < (17 - nota3.toString().length()); i++) {
+			System.out.printf(" ");
+		}
+		System.out.printf("║\n");
+		System.out.println("╠═════════════╬═════════════════╣");
+		System.out.printf("║ Promedio    ║ " + promedio);
+		for (int i = 1; i < (17 - promedio.toString().length()); i++) {
+			System.out.printf(" ");
+		}
+		System.out.printf("║\n");
+		System.out.println("║"+estado);
+		
+		System.out.println("╚═════════════╩═════════════════╝");
+		
 	}
 
 }
