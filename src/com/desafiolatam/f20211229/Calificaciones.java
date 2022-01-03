@@ -29,10 +29,15 @@ public class Calificaciones {
 		Float nota3 = sc.nextFloat();
 		
 		Float promedio = (nota1+nota2+nota3)/3;
-		String estado= "Reprobado";
-		if(promedio >= 4) {
-			estado = "Aprobado";
+		String estado= "Felicitaciones! Te eximiste del examen y aprobaste";
+		if(promedio < 4) {
+			estado = "Debes dar una prueba de recuperación \r\n"
+					+ "para poder rendir el examen final";
+		}else if(promedio>= 4 && promedio<=5.5) {
+			estado= "Debes rendir el examen final para aprobar";
 		}
+		
+		
 		
 		System.out.println();
 		System.out.println("╔═════════════╦═════════════════╗");
@@ -76,9 +81,10 @@ public class Calificaciones {
 		}
 		System.out.printf("║\n");
 		System.out.println("║"+estado);
-		
+		System.out.printf("║\n");
 		System.out.println("╚═════════════╩═════════════════╝");
 		
+		sc.close();
 	}
 
 }
