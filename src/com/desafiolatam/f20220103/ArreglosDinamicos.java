@@ -27,6 +27,7 @@ public class ArreglosDinamicos {
 		ingredientesPizza.add("tomate");
 		ingredientesPizza.add("piña");
 		System.out.println("pizza1 "+ingredientesPizza);
+		//eliminar elemento por valor
 		ingredientesPizza.remove("piña");
 		System.out.println("pizza2 "+ingredientesPizza);
 		
@@ -45,7 +46,7 @@ public class ArreglosDinamicos {
 		
 		//eliminando TODOS los elementos del arreglo
 		vocales.clear();
-		System.out.println("vocales.clear : "+vocales);
+		System.out.println("vocales clear : "+vocales);
 	}
 
 }
