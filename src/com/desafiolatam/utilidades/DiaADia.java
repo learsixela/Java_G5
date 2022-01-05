@@ -51,10 +51,10 @@ public class DiaADia {
 			buff.write("public class Main {");
 			buff.newLine();
 			buff.newLine();
-			buff.write("	public static void main(String[] args) {");
+			buff.write("\tpublic static void main(String[] args) {");
 			buff.newLine();
 			buff.newLine();
-			buff.write("	}");
+			buff.write("\t}");
 			buff.newLine();
 			buff.newLine();
 			buff.write("}");
