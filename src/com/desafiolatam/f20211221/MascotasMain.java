@@ -13,18 +13,18 @@ public class MascotasMain {
 		//System.out.println(mascota.toString());
 		
 		Perro perro = new Perro();
-		System.out.println(perro.horasSueño());
+		System.out.println(perro.horasSuenio());
 		
 		Gato gato = new Gato();
-		System.out.println(gato.horasSueño());
+		System.out.println(gato.horasSuenio());
 		
 		/***/
 		
 		Mascota mascota1 = new Gato();
-		System.out.println("gatito "+mascota1.horasSueño());
+		System.out.println("gatito "+mascota1.horasSuenio());
 		
 		Mascota mascota2 = new Perro();
-		System.out.println("perrito "+mascota2.horasSueño());
+		System.out.println("perrito "+mascota2.horasSuenio());
 		
 		//Perro guau = new Mascota();
 	}

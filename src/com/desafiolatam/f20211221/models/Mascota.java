@@ -40,6 +40,6 @@ public abstract class Mascota {
 		return "Mascota [nombre=" + getNombre() + ", color=" + color + ", raza=" + raza + "]";
 	}
 	
-	public abstract int horasSueño();
+	public abstract int horasSuenio();
 	public abstract String sonido();
 }

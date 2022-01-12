@@ -3,7 +3,7 @@ package com.desafiolatam.f20211221.models;
 public class Perro extends Mascota {
 
 	@Override
-	public int horasSueño() {		
+	public int horasSuenio() {		
 		return 13;
 	}
 

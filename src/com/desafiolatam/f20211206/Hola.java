@@ -24,7 +24,7 @@ public class Hola {
 	*/
 		String anio = "2021";
 		String direccion="FFddDDfFFdd";
-		Integer año= 2021;
+		Integer anio2= 2021;
 		Integer mes =12;
 		Double PI= 3.1416;
 		Double FUERZA_DE_GRAVEDAD= 9.8;
