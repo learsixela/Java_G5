@@ -1,6 +1,8 @@
 package com.desafiolatam.f20220113.models;
 
-public class Estudiante  extends Persona{
+import com.desafiolatam.f20220113.interfaces.MetodosInterface;
+
+public class Estudiante extends Persona implements MetodosInterface{
 
 	private int numeroMatricula;
 
@@ -23,5 +25,17 @@ public class Estudiante  extends Persona{
 	
 	public void pasarLista() {
 		System.out.println("Presente...");
+	}
+
+	@Override
+	public void respirar() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void acelerar() {
+		// TODO Auto-generated method stub
+		
 	}
 }

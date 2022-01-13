@@ -39,10 +39,6 @@ public class Main {
 		Estudiante estu = (Estudiante) estudiante;
 		System.out.println(estu.getNumeroMatricula());
 		
-		// Animal
-		// Gato y Perro
-		// public void haceSonido(){ System.out.println("cuac cuac");}
-		
 		
 		
 	}

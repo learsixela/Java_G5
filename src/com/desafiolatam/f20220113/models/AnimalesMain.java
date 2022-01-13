@@ -7,7 +7,15 @@ public class AnimalesMain {
 		Animal perro = new Perro();
 		
 		gato.haceSonido();
+		gato.dormir();
+		
 		perro.haceSonido();
+		perro.dormir();
+		
+		//no se puede crear una instancia de una clase abstracta
+		//Animal animal = new Animal();
+		
+		Gato tom = new Gato();
 
 	}
 
