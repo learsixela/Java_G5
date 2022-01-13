@@ -45,16 +45,20 @@ public class LibroVenta {
 			fichero.mkdirs();
 		}
 		
-		//crear archivo
-		File archivo = new File(fichero+"/nombreVenta.txt");
+		//crear archivo         src/com/desafiolatam/f20220112/ficheros/ventaBlanco_12012022.txt
+		File archivo = new File(fichero+"/"+nombreVenta+"_"+fechaVenta+".txt");
 		
 		//validando la existencia del archivo
 		if(!archivo.exists()) {
 			try {
 				archivo.createNewFile();
+				
+				
 			} catch (IOException e) {
 				e.printStackTrace();
 			}
+		}else {
+			System.out.println("La venta ya existe");
 		}
 		
 		try {
