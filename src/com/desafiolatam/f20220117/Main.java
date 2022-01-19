@@ -46,6 +46,11 @@ public class Main {
 		
 		List<Gato> silvestre = new ArrayList<>();
 		
+		silvestre.add(tomas);
+		
+		silvestre.get(0).setColor("Blanco");
+
+	
 
 		
 	}
